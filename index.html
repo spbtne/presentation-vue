@@ -1,40 +1,415 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Vue</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-auto-animate>
+          <img class="fade-out" src="./assets/Vue_logo.png" width="300" />
+          <h2 style="font-size: 48px">Vue js</h2>
+          <aside class="notes">introduce</aside>
+        </section>
+        <section data-auto-animate>
+          <img class="fade-out" src="./assets/Vue_logo.png" width="300" />
+          <p class="fade-in">The Progressive JavaScript Framework</p>
+          <aside class="notes">
+            What is Vue? Vue.js is an open source JavaScript framework for
+            creating user interfaces. Easily integrated into projects using
+            other JavaScript libraries. It can function as a web framework that
+            helps develop advanced one-page applications, web interfaces and can
+            also be used for mobile and desktop app development with the
+            Electron framework.
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <p
+            class="fade-in"
+            style="
+              font-weight: bold;
+              color: #42b983;
+              font-size: 3em;
+              letter-spacing: 5px;
+            "
+          >
+            W W W
+          </p>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+          <h2 style="font-weight: bold" class="fragment green-letter">WHO?</h2>
+          <h2
+            style="font-weight: bold; margin-top: 10px"
+            class="fragment green-letter"
+          >
+            WHEN?
+          </h2>
+          <h2
+            style="font-weight: bold; margin-top: 10px"
+            class="fragment green-letter"
+          >
+            WHY?
+          </h2>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+          <aside class="notes">lets find out answers for three questions</aside>
+        </section>
+        <section data-auto-animate>
+          <h2 class="green-letter fade-in" style="font-weight: bold">WHO?</h2>
+          <img
+            class="fade-in fragment"
+            src="./assets/evanjpg.jpg"
+            width="300"
+            style="
+              border-radius: 10px;
+              box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.47);
+            "
+          />
+          <h3 class="fade-in fragment" style="margin-top: 20px">Evan You</h3>
+          <aside class="notes">
+            Evan was born in China <br />
+            after high school went to the US, Colgate University/at Art & Art
+            History faculty <br />
+            After university he entered to Parsons School of Design/ Design and
+            Technology faculty 2010-2012 <br />
+            After school and some time of self-education and open source
+            projects, he get offer from Google. <br />
+            Every year Creative Lab recruits five new graduates. It’s basically
+            a small team with a copywriter, a creative technologist, a graphic
+            designer, a strategist, and a wildcard. <br />
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <h2
+            class="green-letter fade-in"
+            style="font-weight: bold; margin-top: 30px"
+          >
+            WHEN?
+          </h2>
+
+          <p class="fade-in fragment">
+            The first source code commit to the project was dated July 2013, and
+            Vue was first released the following February, in 2014
+          </p>
+          <img
+            class="fade-in fragment"
+            src="./assets/initial_commit.png"
+            width="50%"
+            style="
+              border-radius: 10px;
+              box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.47);
+            "
+          />
+          <aside class="notes">While he working in Google</aside>
+        </section>
+        <section data-auto-animate>
+          <h2
+            class="green-letter fade-in"
+            style="font-weight: bold; margin-top: 30px"
+          >
+            WHY?
+          </h2>
+
+          <blockquote
+            class="fade-in fragment"
+            style="
+              margin-top: 40px;
+              background-color: rgba(0, 0, 0, 0.05);
+              border-radius: 5px;
+              border: 1px solid #42b983;
+              padding: 30px;
+            "
+          >
+            "I figured, what if I could just extract the part that I really
+            liked about Angular and build something really lightweight"
+          </blockquote>
+          <span class="fragment">Evan You</span>
+          <aside class="notes">
+            His job at Google involved a lot of prototyping in the browser. He
+            had this idea and wanted to get something tangible as fast as
+            possible. Some of the projects used Angular at that time. Angular
+            offered something cool which is data binding and a data driven way
+            of dealing with a DOM, so you don’t have to touch the DOM yourself.
+            It also brought in all these extra concepts that forced you to
+            structure the code the way it wanted you to. But it felt too heavy.
+            So he figured, what if he will extract the part that he liked about
+            Angular and build something lightweight without all the extra
+            concepts involved? He was also curious as to how its internal
+            implementation worked. He started this experiment just trying to
+            replicate this minimal feature set, like declarative data binding.
+            That was basically how Vue started.
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <h2
+            class="green-letter fade-in"
+            style="font-weight: bold; margin-top: 30px"
+          >
+            WHY?
+          </h2>
+          <p>Seed.js ?</p>
+          <img
+            class="fade-in fragment"
+            src="./assets/view_vue.png"
+            width="100%"
+            style="
+              border-radius: 10px;
+              box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.47);
+            "
+          />
+          <aside class="notes">
+            In one of the interview Evan says that project originally named
+            Seed.js, but fortunately Seed.js was taken on NPM when he was about
+            publish the package. So he thought again, and considered that if it
+            a view library, maybe it will be just french version of english
+            view? It looks cool, i like it more then Seed.js
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <h2
+            class="fade-in"
+            style="font-weight: bold; margin-top: 10px; color: #42b983"
+          >
+            Result
+          </h2>
+          <p class="fade-in fragment">
+            🚀 Downloads: <strong>7.4 millions/month</strong>
+          </p>
+          <p class="fade-in fragment">
+            ⭐️ GitHub Stars: <strong>174K</strong>
+          </p>
+          <p class="fade-in fragment">
+            👍 Large community, frequent conferences
+          </p>
+          <p class="fade-in fragment">
+            💪 Serious competitor to React and Angular
+          </p>
+          <aside class="notes">
+            seven point four one hundred seventy four thousands
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <h2
+            class="fade-in"
+            style="font-weight: bold; margin-top: 10px; color: #42b983"
+          >
+            They choose Vue
+          </h2>
+          <img
+            class="fade-in fragment"
+            src="./assets/vue_companies.png"
+            width="50%"
+          />
+          <aside class="notes">
+            Google, they use Vue for their career page. <br />
+            Apple use Vue on their SwiftUI tutorial.<br />
+            Nintendo Vue found its place on its official website.<br />
+            Behance They used Vue for their web appt. <br />Trivago use Vue with
+            Nuxt for their magazine.<br />
+            Gitlab is delivered as a single application developed with Vue.
+            <br />Dribbble They developed their web app with Vue. <br />Zoom
+            uses Vue for their web app.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2 class="fade-in fade-out">How does it attract developers?</h2>
+          <aside class="notes">Why Vue becomes more popular?</aside>
+        </section>
+        <section data-auto-animate>
+          <p class="fade-in fade-out" style="font-size: 1.25em">
+            🛫<br />
+            Light Weight
+          </p>
+          <p class="fade-in fade-out">
+            production-ready build project <br />weighs
+            <strong> just 20KB</strong> after min+gzip
+          </p>
+          <aside class="notes">
+            What you really need in a lightweight package, only a few kilobytes
+            in zip format. With such featherweight characteristics, Vue is
+            lightning-fast to download and install. As such, it also has a
+            positive impact on UX and SEO.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fade-in">Virtual DOM performance and Rendering</p>
+          <img class="fade-in" src="./assets/virtual_DOM.png" width="800px" />
+          <aside class="notes">
+            When rendering web pages, chances are pretty good that you’ll run
+            into a DOM or a Document Object Model. This model represents the
+            HTML pages with all styles, page content, and elements as objects
+            which are stored as a tree structure and during page loading, they
+            are generated by the browser. When instances of user interaction
+            happen with the page, the objects change their own state and the
+            browser has to update the info changes and also, render it on the
+            display. The only problem with this is that updating the entire DOM
+            can be a cumbersome process. So to improve the process, Vue.js uses
+            a virtual DOM, a copy of the website’s original DOM, that the
+            framework uses for figuring out element updates without having to
+            render the entire DOM, thus improving app performance and making
+            page rendering rather quick. Better performance and overall speed is
+            a crucial key point for most developers when it comes to choosing
+            the ideal framework.
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <p class="fade-in">Two-way data binding</p>
+          <img class="fade-in" src="./assets/mvvm.png" width="800px" />
+          <aside class="notes">
+            Vue stores another DOM-manipulation benefit, that is known as
+            two-way data binding. Vue inherited this feature from Angular. It
+            basically describes the connection between model data updates and
+            the view (UI), with bound components containing data that you can
+            update from time to time. With two-way data binding, updating
+            related components and tracking data updates in general, becomes
+            easier. Bound data receives reactive updates in Vue just like DOM
+            objects. This feature makes the framework ideal for applications
+            with real-time updates.
+          </aside>
+        </section>
+        <section data-auto-animate>
+          <p class="fade-in" style="margin: 20px 0">
+            Readability and single-file components
+          </p>
+          <img
+            class="fade-in"
+            src="./assets/components.png"
+            width="800px"
+            style="margin: 0"
+          />
+          <p class="fade-in fragment" style="margin: 10px 0">
+            🧩 Reusable Components
+          </p>
+          <p class="fade-in fragment" style="margin: 10px 0">
+            🕵🏼 Great Unit-testing
+          </p>
+          <p class="fade-in fragment" style="margin: 10px 0">🧾 Code Reading</p>
+          <aside class="notes">
+            Vue uses components to build your web page, meaning that every piece
+            of your application is a different component that represents an
+            encapsulated element of the interface itself. These components can
+            be written in JavaScript, CSS, and HTML without the need to divide
+            them into separate files. Application code-splitting is an approach
+            utilized in CBA, or Component-Based Architecture, and are key
+            features in such contenders as React or Angular. <br />
+            An architecture with traits like this also means a couple of
+            benefits: <br />
+            Reusable Components – the encapsulated components can be referred to
+            as code chunks that developers can reuse as templates for similar
+            elements.
+            <br />
+            Great Unit-testing – the testing process is configured as a
+            QA-activity that checks how the smallest parts perform in the app on
+            their own. The component-based approach greatly simplifies this
+            process. <br />
+            Code Reading – Every component is stored in separate files (with
+            each component being a single file), making code readability a lot
+            easier. This feature makes the application easier to maintain and
+            can take a lot of guesswork out of troubleshooting.
+          </aside>
+        </section>
+        <section>
+          <p class="fade-in">🤸🏻‍♀️ Flexibility</p>
+          <p class="fade-in">🔌 Integration Capabilities</p>
+          <p class="fade-in">🛠 Tooling Ecosystem</p>
+          <aside class="notes">
+            Being able to integrate new tech with existing apps is a crucial
+            feature for every software and Vue.js makes this process a breeze
+            because it only needs JavaScript to work and needs no other tools.
+            In Vue, you can write templates using JS, HTML, or a JavaScript
+            syntax extension called JSX. On the other hand, if developers decide
+            to make a shift from Angular or React to Vue, the transition won’t
+            be a problem since it’s basically a mixture of the two making for a
+            familiar platform out of the box. Apart from great integration and
+            flexibility, Vue also boasts a great ecosystem with a powerful set
+            of handy tools that can make development streamlined, quick, and a
+            great experience.
+          </aside>
+        </section>
+        <section>
+          <p class="fade-in">Easy to get started 👌</p>
+          <p class="fade-in fragment">Excellent documentation 📑</p>
+          <p class="fade-in fragment">Video Courses 🎥</p>
+          <p class="fade-in fragment">Great growing community ⚡️</p>
+          <p class="fade-in fragment">New team talents 🦸‍♂️</p>
+          <aside class="notes">
+            1.Truth be told, complex and hard to learn tools rarely get
+            immensely popular. Vue doesn’t require programmers to have years and
+            years of prior experience in coding, in-depth library knowledge,
+            TypeScript, and JSX, as it is with the majority of other front-end
+            frameworks and technologies. According to the professionals, Vue
+            only requires developers to know the basics of HTML, JavaScript, and
+            CSS to get started and take it from there. As a bonus, Atom, Sublime
+            Text and Visual Studio (some of the most popular code editors) all
+            support Vue, which means that giving the framework a try can be even
+            easier. <br />
+            2.The documentation is structured well, and covers a vast number of
+            topics, guiding through the user everything from installation to
+            more complex processes like app scaling and reactivity. The
+            documentation even features sections where it compares Vue to other
+            JS frameworks pointing out differences and things in common. This
+            feature can come insanely handy for developers with prior experience
+            with JavaScript frameworks who need or wish to transit to
+            Vue.Documentation has nine translation<br />
+            3.vuemastery As the ultimate resource for Vue.js developers, Vue
+            Mastery produces weekly lessons so you can learn what you need to
+            succeed as a Vue.js Developer. <br />
+            vueschool teach Vue.js and JavaScript through video courses.
+            <br />
+            4. Vue has great community support with active community members who
+            are always ready to help everyone who’s facing issues during the
+            development process. Great community support and documentation are
+            also important features of every successful framework.
+            <br />
+            5. Some developers doubted the success of View, as only one person
+            worked on it. Now a large team of developers around the world are
+            contributing to the development of the project, which makes it even
+            stronger every day.
+          </aside>
+        </section>
+        <section>
+          Thank you!
+          <aside class="notes">thank you</aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        backgroundTransition: "slide",
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
